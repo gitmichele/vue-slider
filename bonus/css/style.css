@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.slider .img-container{
+    width: 40%;
+}
+.slider img{
+    width: 100%;
+}
+.slider .buttons{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.slider .buttons button{
+    padding: 20px 20px;
+    margin: 0 20px;
+    cursor: pointer;
+}
