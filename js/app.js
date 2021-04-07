@@ -3,19 +3,19 @@ function init() {
     new Vue({
 
         el: '#app',
-        data:{
+        data: {
             'imgNum': 1,
             'sliderLimit': 4
         },
-        methods:{
+        methods: {
 
-            nextImg: function() {
+            nextImg: function () {
 
-                if (this.imgNum == this.sliderLimit){
+                if (this.imgNum == this.sliderLimit) {
 
                     this.imgNum = 1
                 }
-                else{
+                else {
                     this.imgNum++
                 }
             },

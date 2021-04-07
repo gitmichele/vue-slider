@@ -15,7 +15,9 @@
 
     <!-- MY FILES -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app2.js"></script>
+
 
 </head>
 <body>
@@ -25,20 +27,8 @@
             <i @click='prevImg' class="fas fa-caret-left"></i>
         </div>
 
-        <div v-if='imgNum == 1' class="img-container">
-            <img src="img/img1.jpeg" alt="">
-        </div>
-
-        <div v-if='imgNum == 2' class="img-container">
-            <img src="img/img2.jpeg" alt="">
-        </div>
-        
-        <div v-if='imgNum == 3' class="img-container">
-            <img src="img/img3.jpeg" alt="">
-        </div>
-        
-        <div v-if='imgNum == 4' class="img-container">
-            <img src="img/img4.jpeg" alt="">
+        <div class="img-container">
+            <img :src="imgs[imgsIndex]" alt="">
         </div>
 
         <div class="arrow">
