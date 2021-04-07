@@ -9,9 +9,6 @@ function init() {
             'sliderLimit': 'imgs'.length - 1,
             'timer': 0
         },
-        // mounted: function () {
-        //     this.start();
-        // },
         methods: {
 
             nextImg: function () {
@@ -28,7 +25,7 @@ function init() {
             start: function () {
                 this.timer = setInterval(this.nextImg, 3000);
             },
-            
+
             stop: function() {
 
                 clearTimeout(this.timer)
